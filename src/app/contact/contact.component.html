@@ -1,0 +1,47 @@
+<div class="contact-us">
+    <h2>Contact Us</h2>
+    <p>If you have any questions or need assistance, feel free to reach out to us using the form below.</p>
+  
+    <!-- The form itself -->
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+      
+      <!-- Name Field -->
+      <div class="form-field">
+        <label for="name">Name</label>
+        <input id="name" formControlName="name" type="text" placeholder="Enter your name" required />
+        <div *ngIf="contactForm.get('name')?.touched && contactForm.get('name')?.invalid" class="error">
+          Name is required.
+        </div>
+      </div>
+  
+      <!-- Email Field -->
+      <div class="form-field">
+        <label for="email">Email</label>
+        <input id="email" formControlName="email" type="email" placeholder="Enter your email" required />
+        <div *ngIf="contactForm.get('email')?.touched && contactForm.get('email')?.invalid" class="error">
+          A valid email is required.
+        </div>
+      </div>
+  
+      <!-- Phone Field (Optional) -->
+      <div class="form-field">
+        <label for="phone">Phone (Optional)</label>
+        <input id="phone" formControlName="phone" type="tel" placeholder="Enter your phone number (optional)" />
+      </div>
+  
+      <!-- Message Field -->
+      <div class="form-field">
+        <label for="message">Message</label>
+        <textarea id="message" formControlName="message" placeholder="Enter your message" required></textarea>
+        <div *ngIf="contactForm.get('message')?.touched && contactForm.get('message')?.invalid" class="error">
+          Message is required.
+        </div>
+      </div>
+  
+      <!-- Submit Button -->
+      <div class="form-actions">
+        <button type="submit" [disabled]="contactForm.invalid">Send Message</button>
+      </div>
+    </form>
+  </div>
+  

@@ -1,0 +1,85 @@
+/* General styling for the login container */
+.login-container {
+    max-width: 400px;
+    margin: 50px auto;  /* Center the form horizontally */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  h2 {
+    text-align: center;  /* Center the header */
+    margin-bottom: 20px;  /* Space below the header */
+  }
+  
+  /* Full-width class to make form fields stretch */
+  .full-width {
+    width: 100%;
+    margin-bottom: 20px;  /* Space between form fields */
+  }
+  
+  /* Style for mat-form-field components */
+  mat-form-field {
+    margin-bottom: 20px; /* Space between form fields */
+    display: block; /* Make sure mat-form-fields are block-level elements */
+  }
+  
+  /* Adjust styling for the submit button */
+  button {
+    padding: 12px;  /* Add padding for better button interaction */
+    font-size: 16px;
+    margin-top: 20px; /* Space above the button */
+  }
+  
+  /* Styling for the radio button group */
+  mat-radio-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; /* Space out the radio buttons evenly */
+    margin-bottom: 20px; /* Space below the radio buttons */
+  }
+  
+  mat-radio-button {
+    margin: 0 10px;  /* Space between the radio buttons */
+  }
+  
+  /* Optional styling for the forgot password section (not currently in your HTML) */
+  .forgot-password {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .forgot-password a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .forgot-password a:hover {
+    text-decoration: underline;
+  }
+/* Style for the radio button group */
+mat-radio-group {
+  display: flex;
+  justify-content: space-between; /* Spread out the radio buttons horizontally */
+  margin-bottom: 20px;  /* Space below the radio buttons */
+  align-items: center; /* Vertically center the radio buttons */
+}
+
+/* Style for each radio button to add spacing */
+mat-radio-button {
+  margin-right: 10px; /* Add space between radio buttons */
+}
+
+/* Style for the label before the radio buttons */
+mat-radio-group mat-label {
+  margin-right: 15px;  /* Add some space between the label and radio buttons */
+  font-weight: bold;   /* Make the label text bold */
+}
+
+/* General styling for form fields */
+mat-form-field {
+  margin-bottom: 20px;
+}
+  

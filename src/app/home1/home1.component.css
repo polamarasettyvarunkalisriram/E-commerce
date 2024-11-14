@@ -1,0 +1,87 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Styling for the container */
+.categories {
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 300px;
+  margin: 20px auto;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.categories h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 15px;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Styling for the list */
+.categories ul {
+  list-style: none;
+  padding: 0;
+}
+
+.categories li {
+  margin: 10px 0;
+  text-align: center;
+}
+
+/* Links inside the list items */
+.categories a {
+  display: block;
+  text-decoration: none;
+  font-size: 18px;
+  color: #333;
+  padding: 12px;
+  border-radius: 5px;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect for links */
+.categories a:hover {
+  background-color: #007bff;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .categories {
+    width: 80%;
+  }
+
+  .categories h2 {
+    font-size: 22px;
+  }
+
+  .categories a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .categories {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .categories h2 {
+    font-size: 20px;
+  }
+
+  .categories a {
+    font-size: 14px;
+    padding: 10px;
+  }
+}

@@ -1,0 +1,29 @@
+.men-products {
+    margin: 20px;
+  }
+  
+  .product-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+  
+  .product-item {
+    border: 1px solid #ccc;
+    padding: 16px;
+    border-radius: 4px;
+    text-align: center;
+  }
+  
+  .add-product-form {
+    margin-top: 20px;
+    padding: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  mat-form-field {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  

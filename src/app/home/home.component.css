@@ -1,0 +1,102 @@
+/* General Reset for margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Toolbar Styles */
+  .toolbar {
+    background: linear-gradient(145deg, #1e3c72, #2a5298); /* Subtle gradient for modern feel */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    height: 60px; /* Fixed height for consistency */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Elevated shadow for depth */
+    border-radius: 12px; /* Soft rounded corners */
+    position: relative; /* Ensure the toolbar stays on top */
+    z-index: 10;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Hover effect on the entire toolbar */
+  .toolbar:hover {
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px); /* Subtle upward movement */
+  }
+  
+  /* Button Styles inside the Toolbar */
+  .toolbar button {
+    background: none;
+    color: white;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border: 2px solid transparent; /* Transparent border to avoid shift on hover */
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s ease, border-color 0.3s ease;
+    margin-right: 20px;
+  }
+  
+  .toolbar button:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Light transparent background on hover */
+    transform: scale(1.05); /* Slight zoom-in effect */
+    border-color: rgba(255, 255, 255, 0.5); /* Soft border color on hover */
+  }
+  
+  .toolbar button:focus {
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.3); /* Subtle background change when focused */
+    border-color: #f4f4f4; /* Light focus border */
+  }
+  
+  /* Icon Styling Inside Buttons */
+  .toolbar mat-icon {
+    font-size: 22px;
+    margin-right: 12px; /* More space between icon and text */
+    transition: transform 0.3s ease; /* Smooth transition for icon scale on hover */
+  }
+  
+  .toolbar button:hover mat-icon {
+    transform: scale(1.1); /* Slight zoom-in effect for icons on hover */
+  }
+  
+  /* Responsive Design for smaller screens */
+  @media (max-width: 768px) {
+    .toolbar {
+      padding: 0 15px; /* Reduce padding on smaller screens */
+    }
+  
+    .toolbar button {
+      font-size: 14px; /* Slightly smaller text for buttons */
+      padding: 8px 16px;
+    }
+  
+    .toolbar mat-icon {
+      font-size: 20px; /* Adjust icon size */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .toolbar {
+      flex-direction: column; /* Stack buttons vertically */
+      align-items: flex-start; /* Align buttons to the left */
+      height: auto; /* Allow flexible height */
+      padding: 15px 10px;
+    }
+  
+    .toolbar button {
+      width: 100%; /* Full width buttons */
+      margin-bottom: 12px; /* Space between stacked buttons */
+      text-align: left; /* Align text to the left for better readability */
+    }
+  
+    .toolbar mat-icon {
+      font-size: 18px; /* Slightly smaller icon */
+    }
+  }
+  

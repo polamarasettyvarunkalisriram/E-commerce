@@ -1,0 +1,181 @@
+/* Contact Us Form Container */
+.contact-us {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  background-color: #f7f7f7;
+  border-radius: 12px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+/* Heading Style */
+.contact-us h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+}
+
+.contact-us h2:hover {
+  color: #4caf50; /* Green color on hover */
+}
+
+/* Introductory text */
+.contact-us p {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #777;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  transition: color 0.3s ease;
+}
+
+.contact-us p:hover {
+  color: #555; /* Darker color on hover */
+}
+
+/* Form Fields - Common Styles */
+.form-field {
+  margin-bottom: 1.75rem;
+}
+
+label {
+  display: block;
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.9rem 1.2rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  border-color: #4caf50; /* Green border when focused */
+  box-shadow: 0 0 8px rgba(76, 175, 80, 0.3); /* Soft glow effect */
+  outline: none;
+}
+
+textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+/* Error Message Styling */
+.error {
+  color: #f44336;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+  font-weight: 400;
+}
+
+/* Button Styling */
+button {
+  background-color: #4caf50; /* Green background */
+  color: #fff;
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 50px; /* Rounded corners for button */
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-color: #45a049; /* Darker green on hover */
+  transform: translateY(-3px); /* Slight lift effect on hover */
+}
+
+button:active {
+  transform: translateY(0); /* Return to normal on click */
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* Button - Mobile-Friendly Adjustment */
+button {
+  width: 100%;
+  padding: 1rem 0;
+}
+
+button:disabled {
+  background-color: #f0f0f0; /* Lighter gray for disabled button */
+  color: #999;
+}
+
+/* Form Actions */
+.form-actions {
+  text-align: center;
+}
+
+/* Input Focus Effects */
+input:focus,
+textarea:focus {
+  border-color: #4caf50;
+  box-shadow: 0 0 10px rgba(76, 175, 80, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-us {
+    padding: 2rem 1.5rem;
+  }
+
+  .contact-us h2 {
+    font-size: 1.8rem;
+  }
+
+  .contact-us p {
+    font-size: 1rem;
+  }
+
+  .form-field input,
+  .form-field textarea {
+    font-size: 0.95rem;
+    padding: 0.75rem 1rem;
+  }
+
+  button {
+    padding: 1rem 1.8rem;
+    font-size: 1rem;
+  }
+
+  .form-actions {
+    margin-top: 1.5rem;
+  }
+}
+
+/* Transition effect for contact form */
+.contact-us {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+

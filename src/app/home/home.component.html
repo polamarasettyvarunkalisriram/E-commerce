@@ -1,0 +1,19 @@
+<mat-toolbar color="primary" class="toolbar">
+  <!-- Home, About, Contact buttons on the left -->
+  <button mat-button routerLink="/home/home1">
+    <mat-icon>home</mat-icon> Home
+  </button>
+  <button mat-button routerLink="/home/about">
+    <mat-icon>info</mat-icon> About
+  </button>
+  <button mat-button routerLink="/home/contact">
+    <mat-icon>contact_mail</mat-icon> Contact
+  </button>
+
+  <button mat-button routerLink="/login">
+    <mat-icon>login</mat-icon> Logout
+  </button>
+</mat-toolbar>
+
+<!-- This is where the child routes will be rendered -->
+<router-outlet></router-outlet>

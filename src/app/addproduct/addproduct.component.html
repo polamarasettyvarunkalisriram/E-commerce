@@ -1,0 +1,25 @@
+<div class="add-product">
+    <h3>Add New Product</h3>
+    <form (ngSubmit)="addProduct()">
+      <mat-form-field>
+        <mat-label>Product Name</mat-label>
+        <input matInput [(ngModel)]="newProduct.name" name="name" required>
+      </mat-form-field>
+  
+      <mat-form-field>
+        <mat-label>Product Price</mat-label>
+        <input matInput [(ngModel)]="newProduct.price" name="price" type="number" required>
+      </mat-form-field>
+  
+      <mat-form-field>
+        <mat-label>Product Description</mat-label>
+        <textarea matInput [(ngModel)]="newProduct.description" name="description" required></textarea>
+      </mat-form-field>
+  
+      <div class="form-actions">
+        <button mat-raised-button color="primary" type="submit">Add Product</button>
+        <button mat-raised-button color="warn" (click)="cancelAddProduct()">Cancel</button>
+      </div>
+    </form>
+  </div>
+  

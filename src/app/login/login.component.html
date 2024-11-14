@@ -1,0 +1,23 @@
+<div class="login-container">
+  <h2>Login</h2>
+
+  <!-- Username Input -->
+  <mat-form-field class="full-width">
+    <mat-label>Username</mat-label>
+    <input matInput [(ngModel)]="loginusername" name="loginusername" required placeholder="Enter your username">
+  </mat-form-field>
+
+  <!-- Password Input -->
+  <mat-form-field class="full-width">
+    <mat-label>Password</mat-label>
+    <input matInput type="password" [(ngModel)]="loginpassword" name="loginpassword" required placeholder="Enter your password">
+  </mat-form-field>
+
+  <!-- Login Button -->
+  <button mat-raised-button color="primary" (click)="loginuser()">Login</button>
+
+  <!-- Register Link -->
+  <div class="register-link">
+    <p>Don't have an account? <button (click)="backtoregister()">Register here</button></p>
+  </div>
+</div><router-outlet>.<router-outlet>
